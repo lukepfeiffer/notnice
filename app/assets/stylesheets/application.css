@@ -1,18 +1,44 @@
-#notnice{
-	font-size: 60px;
-	padding: 0 0 0 30px;
+body{
+  text-align: center;
+  background-color: #ccc;
+  border: solid 1px #6C7777;	
+  border-radius: 4px;
+  padding: 10px;
 }
 
-body{
-	text-align: center;
-	background-color: #ccc;
-  border: solid 1px #6C7777;	
-	border-radius: 4px;
+a{
+  font-size: 20px;
+  font-family: arial;
+  color: #fff;
+  background-color: #25a6e1;
+  text-align center;
+  float: left;
+  text-decoration: none;
+  border: 1px solid #1a87b9;
+  border-radius: 4px;
+  padding: 10px 10px 0 10px;
+  margin: 3px;
 }
 
 h1{
+  padding: 0 140px 0 0;
 }
 
+.field{
+  
+}
+
+.submit{
+  font-size: 18px;
+  font-family: arial;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .enter{
-   font-size: 20px;
+  font-size: 20px;
+}
+
+#notnice{
+  font-size: 60px;
+  padding: 0 0 0 30px;
 }
