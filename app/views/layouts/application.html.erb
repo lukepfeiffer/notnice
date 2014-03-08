@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notnice</title>
+    <%= stylesheet_link_tag "application", media: "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id = 'main'>
+      <h1 id = 'notnice'>
+        NotNice
+      </h1>
+    <%= yield %>
+    </div>
+  </body>
+</html>

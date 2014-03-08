@@ -1,0 +1,18 @@
+#notnice{
+	font-size: 60px;
+	padding: 0 0 0 30px;
+}
+
+body{
+	text-align: center;
+	background-color: #ccc;
+  border: solid 1px #6C7777;	
+	border-radius: 4px;
+}
+
+h1{
+}
+
+.enter{
+   font-size: 20px;
+}
