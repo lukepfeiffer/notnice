@@ -1,10 +1,17 @@
 <body>
-  <%= link_to 'Sign Up', sign_up_path %>
-  <%= link_to 'Sign In', sign_in_path %>
 
-  <h1>
+  <%= if signed_in?
+	link_to 'Log Out', log_out_path,  class: 'sign_out', method: :delete %>
+	<p>
+	 <% current_user.username
+	 '(admin)' if current_user.admin? %>
+	</p>
+     <% else
+     link_to 'Log In', log_in_pat %>h
+  <% end %>
+
+  <h1 id= 'notnice_h1'>
     Videos:
   </h1>
-
 
 </body>

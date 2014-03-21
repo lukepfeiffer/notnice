@@ -1,6 +1,8 @@
 Notnice::Application.routes.draw do
+   resources 'users'
    root 'pages#home'
    get '/notnice', to: 'pages#notnice'
-   get '/sign_in', to: 'pages#sign_in'
-   post '/sign_up', to: 'pages#sign_up'
+   post '/log_in', to: 'pages#log_in'
+   get '/log_in', to: 'pages#log_in'
+   delete '/log_out', to: 'sessions#destroy'
 end

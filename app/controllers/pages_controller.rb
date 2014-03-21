@@ -2,10 +2,8 @@ class PagesController < ApplicationController
   def notnice
   end
 
-  def sign_up
-  end
-
-  def sign_in
+  def log_in
+    @user = User.new
   end
 
 end

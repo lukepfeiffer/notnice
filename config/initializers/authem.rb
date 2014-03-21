@@ -1,3 +1,3 @@
 Authem.configure do |config|
-  config.user_class = user
+  config.user_class = User
 end

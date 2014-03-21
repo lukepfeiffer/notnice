@@ -1,0 +1,24 @@
+<div class= 'log_in'>
+  <%= form_for(@user, url: '/log_in') do |f| %>
+
+	<h1> Sign In	</h1>
+	<ul id= 'sign_in'>
+	  <%= f.text_field :email, placeholder: 'Username or Email', class: 'field' %>
+	  <%= f.password_field :password, placeholder: 'Password', class: 'field' %>
+	  <%= f.submit 'Sign In', class: 'submit' %>
+	</ul>
+  <% end %>
+
+  <%= form_for(@user) do |f| %>
+    <h1> New user? Sign Up </h1>
+    <ul id = 'sign_up'>
+	  <%= f.text_field :username, placeholder: 'Username', class: 'field' %>
+	  <%= f.text_field :email, placeholder: 'Email', class: 'field' %>
+	  <%= f.password_field :password, placeholder: 'Password', class: 'field' %>
+	  <%= f.password_field :password_confirmation, placeholder: 'Password Confirmation', class: 'field' %>
+	  <%= f.submit 'Sign Up', class: 'submit' %>
+    </ul>
+
+  <% end %>
+
+</div>

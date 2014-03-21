@@ -1,5 +1,4 @@
 body{
-  text-align: center;
   background-color: #ccc;
   border: solid 1px #6C7777;	
   border-radius: 4px;
@@ -16,7 +15,7 @@ a{
   text-decoration: none;
   border: 1px solid #1a87b9;
   border-radius: 4px;
-  padding: 10px 10px 0 10px;
+  padding: 5px 10px 0 10px;
   margin: 3px;
 }
 
@@ -25,7 +24,10 @@ h1{
 }
 
 .field{
-  
+  display: list-item;
+  border-radius: 4px;
+  border: 1px solid #8585ad;
+  font-size: 20px;
 }
 
 .submit{
@@ -34,11 +36,23 @@ h1{
   border-radius: 5px;
   cursor: pointer;
 }
+
+.home_h1{
+  padding: 0;
+
+}
+
 .enter{
   font-size: 20px;
+  float: none;
 }
 
 #notnice{
+  text-align: center;
   font-size: 60px;
   padding: 0 0 0 30px;
+}
+
+#notnice_h1{
+  text-align: center;
 }
