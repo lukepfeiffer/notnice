@@ -1,13 +1,4 @@
 <div class= 'log_in'>
-  <%= form_for(@user, url: '/log_in') do |f| %>
-
-	<h1> Sign In	</h1>
-	<ul id= 'sign_in'>
-	  <%= f.text_field :email, placeholder: 'Username or Email', class: 'field' %>
-	  <%= f.password_field :password, placeholder: 'Password', class: 'field' %>
-	  <%= f.submit 'Sign In', class: 'submit' %>
-	</ul>
-  <% end %>
 
   <%= form_for(@user) do |f| %>
     <h1> New user? Sign Up </h1>
@@ -20,5 +11,14 @@
     </ul>
 
   <% end %>
+
+  <%= form_tag(sign_in_path) %>
+	<h1> Sign In </h1>
+	<ul id= 'sign_in'>
+	  <%= text_field_tag :email, nil, placeholder: 'Username or Email', class: 'field' %>
+	  <%= password_field_tag :password, nil, placeholder: 'Password', class: 'field' %>
+	  <%= submit_tag 'Sign In', class: 'submit' %>
+	</ul>
+
 
 </div>

@@ -1,14 +1,23 @@
 <body>
 
   <%= if signed_in?
-	link_to 'Log Out', log_out_path,  class: 'sign_out', method: :delete %>
-	<p>
-	 <% current_user.username
-	 '(admin)' if current_user.admin? %>
-	</p>
-     <% else
-     link_to 'Log In', log_in_pat %>h
-  <% end %>
+      	link_to 'Log Out', log_out_path,  class: 'sign_out', method: :delete
+      else
+        link_to 'Log In', log_in_path
+  end %>
+
+  <p class= 'username'>
+    <%= if signed_in?
+          current_user.username
+    end %>
+    <%= if signed_in?
+         '(Admin)' if current_user.admin?
+    end%>
+
+      <%= if signed_in?
+        link_to 'Upload Video', upload_video_path,id: 'uplaod_video_link' if current_user.admin?
+      end%>
+  </p>
 
   <h1 id= 'notnice_h1'>
     Videos:

@@ -47,6 +47,25 @@ h1{
   float: none;
 }
 
+p{
+  font-size: 27px;
+  font-family: arial;
+
+}
+
+.username{
+  float: right;
+  font-size: 19px;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #36c;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #4775d1;
+  width: 150px;
+}
+
 #notnice{
   text-align: center;
   font-size: 60px;
@@ -55,4 +74,12 @@ h1{
 
 #notnice_h1{
   text-align: center;
+}
+
+#upload_video_link{
+  cursor: pointer;
+}
+
+#upload_video_div{
+  margin: 0 0 0 15px;
 }

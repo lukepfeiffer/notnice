@@ -6,4 +6,7 @@ class PagesController < ApplicationController
     @user = User.new
   end
 
+  def upload_video
+  end
+
 end
