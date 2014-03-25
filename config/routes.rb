@@ -1,5 +1,7 @@
 Notnice::Application.routes.draw do
    resources :users
+   resources :videos
+
    root 'pages#home'
 
    post '/log_in', to: 'pages#log_in'
@@ -7,7 +9,6 @@ Notnice::Application.routes.draw do
 
    get '/log_in', to: 'pages#log_in'
    get '/notnice', to: 'pages#notnice'
-   get '/upload_video', to: 'pages#upload_video'
 
    delete '/log_out', to: 'sessions#destroy'
 end

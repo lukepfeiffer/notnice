@@ -63,7 +63,15 @@ p{
   border-radius: 4px;
   color: #fff;
   background-color: #4775d1;
-  width: 150px;
+  width: 175px;
+}
+
+.new_video{
+  cursor: pointer;
+}
+
+.video{
+  padding: 50px;
 }
 
 #notnice{
@@ -76,10 +84,6 @@ p{
   text-align: center;
 }
 
-#upload_video_link{
-  cursor: pointer;
-}
-
-#upload_video_div{
+.new_video_div{
   margin: 0 0 0 15px;
 }

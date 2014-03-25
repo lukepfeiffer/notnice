@@ -15,12 +15,17 @@
     end%>
 
       <%= if signed_in?
-        link_to 'Upload Video', upload_video_path,id: 'uplaod_video_link' if current_user.admin?
+        link_to 'Upload Video', new_video_path, class: 'new_video' if current_user.admin?
       end%>
   </p>
 
   <h1 id= 'notnice_h1'>
     Videos:
+    <ul class= 'video'>
+      <%- @videos.each do |video| %>
+        <%= video.url.html_safe %>
+      <% end %>
+    </ul>
   </h1>
 
 </body>

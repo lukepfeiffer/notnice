@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140320220611) do
+ActiveRecord::Schema.define(version: 20140325223336) do
 
   create_table "users", force: true do |t|
     t.string   "email"
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20140320220611) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "admin"
+  end
+
+  create_table "videos", force: true do |t|
+    t.string "url"
+    t.text   "caption"
   end
 
 end
