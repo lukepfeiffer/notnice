@@ -16,11 +16,34 @@ a{
   border: 1px solid #1a87b9;
   border-radius: 4px;
   padding: 5px 10px 0 10px;
-  margin: 3px;
 }
 
-h1{
-  padding: 0 140px 0 0;
+iframe{
+  width: 650px;
+  height: 430px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.video_ul{
+  padding: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption{
+  width: 791px;
+}
+
+
+.delete{
+  font-size: 16px;
+  float: right;
+  position: relative;
+  left: -235px;
+  top: -40px;
 }
 
 .field{
@@ -39,7 +62,7 @@ h1{
 
 .home_h1{
   padding: 0;
-
+  text-align: center;
 }
 
 .enter{
@@ -50,7 +73,6 @@ h1{
 p{
   font-size: 27px;
   font-family: arial;
-
 }
 
 .username{
@@ -58,32 +80,28 @@ p{
   font-size: 19px;
   text-align: center;
   padding: 5px;
-  margin: 10px;
   border: 1px solid #36c;
   border-radius: 4px;
   color: #fff;
   background-color: #4775d1;
   width: 175px;
+  position: relative;
+  top: -50px;
+}
+
+.notnice_h1{
+  text-align: center;
 }
 
 .new_video{
-  cursor: pointer;
 }
 
-.video{
-  padding: 50px;
+.new_video_div{
+  margin: 0 0 0 15px;
 }
 
 #notnice{
   text-align: center;
   font-size: 60px;
   padding: 0 0 0 30px;
-}
-
-#notnice_h1{
-  text-align: center;
-}
-
-.new_video_div{
-  margin: 0 0 0 15px;
 }

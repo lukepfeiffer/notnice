@@ -11,4 +11,5 @@ Notnice::Application.routes.draw do
    get '/notnice', to: 'pages#notnice'
 
    delete '/log_out', to: 'sessions#destroy'
+   delete '/delete', to: 'videos#destroy'
 end

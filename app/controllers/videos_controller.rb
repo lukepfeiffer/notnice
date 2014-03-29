@@ -3,9 +3,6 @@ class VideosController < ApplicationController
     @video = Video.new
   end
 
-  def caption
-  end
-
   def create
     @video = Video.new(video_params)
     if @video.save
@@ -15,9 +12,15 @@ class VideosController < ApplicationController
     end
   end
 
+  def destroy
+    Video.find_by(params[:id]).destroy
+    redirect_to notnice_path
+  end
+
   def video_params
     params.require(:video).permit(
-      :url
+      :url,
+      :caption
     )
   end
 end

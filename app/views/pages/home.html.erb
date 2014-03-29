@@ -1,7 +1,9 @@
 <body>
-	<h1 class= 'home_h1'>
-		Most Recent Video:
-	</h1>
+      <h1 class= 'home_h1'>
+      <%- @video do |video| %>
+	  <%= video.url.html_safe %>
+      <% end %>
+      </h1>
 
-	<%= link_to 'Enter NotNice', notnice_path, class: 'enter' %>
+      <%= link_to 'Enter NotNice', notnice_path, class: 'enter' %>
 </body>
