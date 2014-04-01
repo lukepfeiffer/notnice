@@ -5,6 +5,7 @@ class VideosController < ApplicationController
 
   def create
     @video = Video.new(video_params)
+    @video.user = current_user
     if @video.save
       redirect_to notnice_path
     else

@@ -1,8 +1,6 @@
 <body>
       <h1 class= 'home_h1'>
-      <%- @video do |video| %>
-	  <%= video.url.html_safe %>
-      <% end %>
+	  <%= @video.url.html_safe %>
       </h1>
 
       <%= link_to 'Enter NotNice', notnice_path, class: 'enter' %>

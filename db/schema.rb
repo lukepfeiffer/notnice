@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140325223336) do
+ActiveRecord::Schema.define(version: 20140401223220) do
 
   create_table "users", force: true do |t|
     t.string   "email"
@@ -26,8 +26,9 @@ ActiveRecord::Schema.define(version: 20140325223336) do
   end
 
   create_table "videos", force: true do |t|
-    t.string "url"
-    t.text   "caption"
+    t.string  "url"
+    t.text    "caption"
+    t.integer "user_id"
   end
 
 end

@@ -8,6 +8,9 @@ class PagesController < ApplicationController
 
   def notnice
     @videos = Video.all
+  end
+
+  def home
     @video = Video.last
   end
 end
