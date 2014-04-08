@@ -8,6 +8,7 @@ class PagesController < ApplicationController
 
   def notnice
     @videos = Video.all
+    @comments = Comment.all
   end
 
   def home

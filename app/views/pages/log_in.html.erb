@@ -9,7 +9,6 @@
 	  <%= f.password_field :password_confirmation, placeholder: 'Password Confirmation', class: 'field' %>
 	  <%= f.submit 'Sign Up', class: 'submit' %>
     </ul>
-
   <% end %>
 
   <%= form_tag(sign_in_path) %>
@@ -19,6 +18,4 @@
 	  <%= password_field_tag :password, nil, placeholder: 'Password', class: 'field' %>
 	  <%= submit_tag 'Sign In', class: 'submit' %>
 	</ul>
-
-
 </div>

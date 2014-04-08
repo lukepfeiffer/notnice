@@ -16,7 +16,7 @@
       end%>
 
         <%= if signed_in?
-          link_to 'Upload Video', new_video_path, class: 'new_video' if current_user.admin?
+          link_to 'Embed Video', new_video_path, class: 'new_video' if current_user.admin?
         end%>
     </p>
   </div>
@@ -27,9 +27,15 @@
           <%= video.url.html_safe %>
             <p class= 'caption'>
               <%= video.user.username %>: <%= video.caption %>
+
+              <%= form_tag(notnice_path) %>
+                <%= text_field_tag :comment, nil, placeholder: 'Comment', class: 'field' %>
+                <%= submit_tag 'Post', class: 'submit' %>
+
               <%= if signed_in? 
                     link_to 'Delete Video', delete_path, method: :delete, class: 'delete' if current_user.admin?
               end %>
+
             </p>
         <% end %>
       </ul>

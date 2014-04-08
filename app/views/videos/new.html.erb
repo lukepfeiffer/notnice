@@ -7,10 +7,10 @@
   </p>
 
   <p>
-    Upload Video
+    Embed Video 
     <%= form_for(@video) do |f|%>
-	  <%= f.text_field :url, placeholder: 'Youtube Embedded Url', class: 'field' %>
-	  <%= f.text_field :caption, placeholder: 'Video Caption', class: 'field' %>
+	  <%= f.text_area :url, placeholder: 'Youtube Embedded Url', class: 'area' %>
+	  <%= f.text_area :caption, placeholder: 'Video Caption', class: 'area', id: 'caption_field' %>
 	  <%= f.submit 'Submit', class: 'submit' %>
     <% end %>
   </p>

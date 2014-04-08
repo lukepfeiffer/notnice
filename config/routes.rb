@@ -6,6 +6,7 @@ Notnice::Application.routes.draw do
 
    post '/log_in', to: 'pages#log_in'
    post '/sign_in', to: 'sessions#create'
+   post '/notnice', to: 'comments#create'
 
    get '/log_in', to: 'pages#log_in'
    get '/notnice', to: 'pages#notnice'

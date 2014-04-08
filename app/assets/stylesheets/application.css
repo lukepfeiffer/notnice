@@ -59,6 +59,22 @@ iframe{
   font-size: 20px;
 }
 
+.area{
+  display: list-item;
+  border-radius: 4px;
+  border: 1px solid #8585ad;
+  height: 58px;
+  width: 200px;
+  font-size: 12px;
+  font-family: arial;
+  margin: 1px;
+}
+
+#caption_field{
+  font-family: arial;
+  font-size: 17px;
+}
+
 .submit{
   font-size: 18px;
   font-family: arial;
