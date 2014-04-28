@@ -1,8 +1,23 @@
 body{
   background-color: #ccc;
+<<<<<<< HEAD
   border: solid 1px #6C7777;	
   border-radius: 4px;
   padding: 10px;
+=======
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+}
+
+.main{
+  background: url('/assets/city.jpg') repeat-x;
+}
+
+p{
+  font-size: 27px;
+  font-family: arial;
+>>>>>>> parent of 810d73a... Videos paginate
 }
 
 a{
@@ -28,6 +43,7 @@ iframe{
 }
 
 .video_ul{
+<<<<<<< HEAD
   padding: 20px;
   width: 90%;
   margin-left: auto;
@@ -36,6 +52,17 @@ iframe{
 
 .caption{
   width: 650px;
+=======
+   padding: 20px;
+   width: 90%; 
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.comment_div{
+  width: 693px;
+>>>>>>> parent of 810d73a... Videos paginate
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -106,7 +133,11 @@ p{
   border-radius: 4px;
   color: #fff;
   background-color: #4775d1;
+<<<<<<< HEAD
   width: 175px;
+=======
+  max-width: 175px;
+>>>>>>> parent of 810d73a... Videos paginate
   position: relative;
   top: -50px;
 }
@@ -115,8 +146,13 @@ p{
 
 }
 
+<<<<<<< HEAD
 .video_div{
   text-align: center;
+=======
+.log_in{
+  text-align: left;
+>>>>>>> parent of 810d73a... Videos paginate
 }
 
 .new_video{
@@ -126,8 +162,25 @@ p{
   margin: 0 0 0 15px;
 }
 
+<<<<<<< HEAD
 #notnice{
   text-align: center;
   font-size: 60px;
   padding: 0 0 0 30px;
+=======
+#sign_up{
+  padding: 0 0 0 18px;
+  background-color: #ccc;
+  width: 180px;
+  border: 1px solid #676767;
+  border-radius: 7px;
+}
+
+#sign_in{
+  padding: 0 0 0 18px;
+  background-color: #ccc;
+  width: 140px;
+  border: 1px solid #676767;
+  border-radius: 7px;
+>>>>>>> parent of 810d73a... Videos paginate
 }

@@ -8,7 +8,11 @@ class PagesController < ApplicationController
 
   def notnice
     @videos = Video.all
+<<<<<<< HEAD
     @comments = Comment.all
+=======
+    @comment = Comment.new
+>>>>>>> parent of 810d73a... Videos paginate
   end
 
   def home
