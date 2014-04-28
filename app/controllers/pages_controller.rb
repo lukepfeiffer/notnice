@@ -5,6 +5,7 @@ class PagesController < ApplicationController
 
   def notnice
     @videos = Video.all #.paginate(page: params[:page], per_page: 5)
+    @comments = Comment.all
     @comment = Comment.new
   end
 

@@ -40,6 +40,14 @@ iframe{
 }
 
 .video_ul{
+  padding: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caption{
+  width: 650px;
    padding: 20px;
    width: 90%; 
    margin-left: auto;
@@ -48,12 +56,16 @@ iframe{
 }
 
 .comment_div{
-  width: 693px;
-  border: 1px solid #88808a;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ccc;
+  /* width: 693px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* position: relative; */
+  /* left: -48px; */
+  /* border: 1px solid #88808a; */
+  /* border-radius: 5px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* background-color: #ccc; */
 }
 
 .delete{
@@ -155,6 +167,10 @@ iframe{
   text-align: left;
 }
 
+.log_in{
+  text-align: left;
+}
+
 .embed_video{
   text-align: left;
   width: 180px;
@@ -165,7 +181,15 @@ iframe{
   top: 20px;
 }
 
-.submit_form{
+#sign_up{
+  padding: 0 0 0 18px;
+  background-color: #ccc;
+  width: 180px;
+  border: 1px solid #676767;
+  border-radius: 7px;
+}
+
+#sign_up{
   padding: 0 0 0 18px;
   background-color: #ccc;
   width: 125px;
@@ -175,4 +199,9 @@ iframe{
 
 #submit_video{
   float: left;
+  padding: 0 0 0 18px;
+  background-color: #ccc;
+  width: 140px;
+  border: 1px solid #676767;
+  border-radius: 7px;
 }
