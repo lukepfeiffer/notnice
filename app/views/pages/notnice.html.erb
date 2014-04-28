@@ -25,18 +25,43 @@
       <ul class= 'video_ul'>
         <%- @videos.reverse_each do |video| %>
           <%= video.url.html_safe %>
-            <p class= 'caption'>
-              <%= video.user.username %>: <%= video.caption %>
 
-              <%= form_tag(notnice_path) %>
-                <%= text_field_tag :comment, nil, placeholder: 'Comment', class: 'field' %>
-                <%= submit_tag 'Post', class: 'submit' %>
+            <div class= 'comment_div'>
+              <p class= 'caption'>
 
-              <%= if signed_in? 
-                    link_to 'Delete Video', delete_path, method: :delete, class: 'delete' if current_user.admin?
-              end %>
+               <span class= 'caption_username'>
+               <%= video.user.username %>: 
+               </span>
+               <%= video.caption %>
 
-            </p>
+                <%= if signed_in? 
+                      link_to 'Delete Video?', delete_video_path, method: :delete, class: 'delete' if current_user.admin?
+                end %>
+
+                <p class= 'comment'>
+                  <%- video.comments.each do |comment| %>
+                    <p class= 'comment'>
+                      <span class= 'comment_username' >
+                      <%= comment.user.username %>: 
+                      </span>
+                      <%= comment.comment %>
+                      <%= if signed_in?
+                            link_to 'Delete Comment?', delete_comment_path, method: :delete, class: 'delete' if current_user.admin?
+                      end %>
+                    </p>
+                  <% end %>
+                  <%= form_for(@comment) do |f| %>
+                    <%- if signed_in? %>
+                          <%= f.text_field 'comment', placeholder: 'Comment?', class: 'field' %>
+                          <%= f.hidden_field  :video_id, value: video.id %>
+                          <%= f.submit 'Post', class: 'submit' %>
+                    <% end %>
+                  <% end %>
+                </p>
+
+              </p>
+            </div>
+
         <% end %>
       </ul>
   </div>

@@ -1,14 +1,10 @@
 class PagesController < ApplicationController
-  def notnice
-  end
-
   def log_in
     @user = User.new
   end
 
   def notnice
-    @videos = Video.all
-    @comments = Comment.all
+    @videos = Video.all #.paginate(page: params[:page], per_page: 5)
     @comment = Comment.new
   end
 

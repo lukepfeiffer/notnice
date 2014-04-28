@@ -1,0 +1,11 @@
+%div.new_video_div
+  %p.username
+    - if signed_in?
+      = current_user.username + '(Admin)' if current_user.admin?
+
+  %p.embed_video
+    Embed Video
+    = form_for(@video) do |f|
+      = f.text_area :url, placeholder: 'Youtube Embedded Url', class: 'area'
+      = f.text_area :caption, placeholder: 'Video Caption', class: 'area', id: 'caption_field'
+      = f.submit 'Submit', class: 'submit', id: 'submit_video'

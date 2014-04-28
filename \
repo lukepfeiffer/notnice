@@ -7,7 +7,6 @@ body{
 
 .main{
   background: url('/assets/city.jpg') repeat-x;
-  height: 350px;
 }
 
 p{
@@ -93,8 +92,8 @@ iframe{
   color: #f66;
 }
 
-#post_comment{
-  float: left; 
+.new_comment{
+  display: list-item;
 }
 
 .field{
@@ -138,12 +137,11 @@ iframe{
   background-color: #4775d1;
   max-width: 175px;
   position: relative;
-  top: -15px;
+  top: -50px;
 }
 
 .notnice{
   font-size: 60px;
-  margin: 0;
 }
 
 .log_in{
@@ -163,11 +161,11 @@ iframe{
 .submit_form{
   padding: 0 0 0 18px;
   background-color: #ccc;
-  width: 125px;
+  width: 140px;
   border: 1px solid #676767;
   border-radius: 7px;
 }
 
 #submit_video{
-  float: left;
+  float: left
 }
