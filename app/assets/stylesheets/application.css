@@ -63,6 +63,11 @@ iframe{
 
 #delete_comment{
   font-size: 12px;
+  background-color: #cc1010;
+}
+
+#delete_video{
+  background-color: #ff0303;
 }
 
 .caption{

@@ -21,7 +21,7 @@
           - if signed_in?
             %span.caption_username #{video.user.username} :
             %span.caption_text= video.caption
-            = link_to 'Delete Video?', video_path(video), method: :delete, class: 'delete' if current_user.admin?
+            = link_to 'Delete Video?', video_path(video), method: :delete, confirm: 'Are you sure?', class: 'delete', id: 'delete_video' if current_user.admin?
 
           %p.comment
             - video.comments.each do |comment|
