@@ -1,6 +1,6 @@
 class AddTimestampsToVideo < ActiveRecord::Migration
   def change
-    add_column :videos, :created_at, :date_time
-    add_column :videos, :updated_at, :date_time
+    add_column :videos, :created_at, :timestamp
+    add_column :videos, :updated_at, :timestamp
   end
 end
